@@ -1,0 +1,432 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F0F2F5;
+  font-family: Segoe UI Historic, segoe UI;
+}
+body::before {
+  content: "";
+  display: block;
+  height: 5rem;
+}
+
+.facebook-contacts__contact, .facebook-pages__page, .facebook-favorites__favorite, ul .facebook-shortcuts__shortcut {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 0.3125rem;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.625rem 0;
+}
+
+.page-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  gap: 0.625rem;
+  padding: 0.625rem;
+}
+.page-content__left {
+  flex: 25% 0 0;
+  max-width: 22.5rem;
+}
+.page-content__middle {
+  flex: 50% 0 0;
+  max-width: 42.5rem;
+}
+.page-content__right {
+  flex: 25% 0 0;
+  max-width: 22.5rem;
+}
+
+nav, .nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.0509803922);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+nav__left, .nav__left {
+  flex: 25% 0 0;
+  max-width: 22.5rem;
+}
+nav__middle, .nav__middle {
+  flex: 50% 0 0;
+  max-width: 42.5rem;
+}
+nav__right, .nav__right {
+  flex: 25% 0 0;
+  max-width: 22.5rem;
+}
+nav__right .facerbook-services__service, .nav__right .facerbook-services__service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #efefef;
+  font-size: 1.5rem;
+}
+nav .input-box__text, .nav .input-box__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+}
+nav .input-box__text label, .nav .input-box__text label {
+  width: 100%;
+}
+nav .input-box__text input, .nav .input-box__text input {
+  border: none;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  background-color: #efefef;
+  width: inherit;
+}
+nav .facebook-icons, .nav .facebook-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 1.8rem;
+  color: #656565;
+}
+nav .facebook-icons .active, .nav .facebook-icons .active {
+  color: #1b75e5;
+}
+nav .facebook_services, .nav .facebook_services {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 1.8rem;
+  color: #656565;
+}
+nav .facebook_services img, .nav .facebook_services img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+ul .facebook-shortcuts__shortcut {
+  /*@include flex (left , center,5);
+  font-size: 1rem;
+  font-weight: 550;
+  padding: rem(8) 0 ;*/
+}
+ul .facebook-shortcuts__shortcut i {
+  color: #1b75e5;
+  font-size: 1.4rem;
+}
+
+.seperator {
+  border-top: 1px solid #ccc;
+  padding: 0.625rem;
+  margin-top: 0.625rem;
+}
+
+.facebook-favorites__favorite img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.facebook-sponsers__sponser {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.625rem;
+  margin: 0.625rem 0;
+}
+.facebook-sponsers__sponser img {
+  max-width: 115px;
+  border-radius: 0.3125rem;
+}
+
+.facebook-pages__page {
+  padding: 0.3125rem 0;
+}
+.facebook-pages__page img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.facebook-contacts__contact img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.stories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+.stories .story {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.625rem;
+  flex-direction: column;
+  width: 8.125rem;
+  height: 12.5rem;
+  padding: 0.625rem;
+  margin: unset;
+  border-radius: 0.625rem;
+  box-shadow: 0 2px 2px 20;
+  background-color: rgba(0, 0, 0, 0.2509803922);
+  background-blend-mode: multiply;
+}
+.stories .story.story-1 {
+  background-image: url("https://picsum.photos/id/85/100/180");
+}
+.stories .story.story-2 {
+  background-image: url("https://picsum.photos/id/87/100/180");
+}
+.stories .story.story-3 {
+  background-image: url("https://picsum.photos/id/88/100/180");
+}
+.stories .story.story-4 {
+  background-image: url("https://picsum.photos/id/89/100/180");
+}
+.stories .story.story-5 {
+  background-image: url("https://picsum.photos/id/7/100/180");
+}
+.stories .story.story-6 {
+  background-image: url("https://picsum.photos/id/91/100/180");
+}
+.stories .story img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 4px solid #1b75e5;
+}
+.stories .story__username {
+  color: white;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7215686275);
+}
+
+.create-post {
+  background-color: white;
+  padding: 10px;
+  margin: 1.5625rem 0;
+  border-radius: 0.625rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1254901961);
+}
+.create-post__mind {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+  display: flex;
+}
+.create-post img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.create-post label {
+  width: 100%;
+}
+.create-post input {
+  border: none;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  background-color: #efefef;
+  font-size: 0.9375rem;
+  width: 100%;
+}
+.create-post .seperator {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.625rem;
+}
+.create-post__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 1.125rem;
+}
+.create-post__section span {
+  color: #656565;
+}
+.create-post__section:nth-child(1) i {
+  color: red;
+}
+.create-post__section:nth-child(2) i {
+  color: green;
+}
+.create-post__section:nth-child(3) i {
+  color: orange;
+}
+.create-post__section i {
+  font-size: 1.6rem;
+}
+
+.create-room {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+  background-color: white;
+  padding: 10px;
+  margin: 1.5625rem 0;
+  border-radius: 0.625rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1254901961);
+}
+.create-room__button {
+  border: none;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  background-color: #efefef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 10px;
+  font-size: 0.9375rem;
+}
+.create-room__button span {
+  color: #656565;
+}
+.create-room__button i {
+  font-size: 1.6rem;
+  color: #1b75e5;
+}
+.create-room img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.news-feed {
+  background-color: white;
+  padding: 10px;
+  margin: 1.5625rem 0;
+  border-radius: 0.625rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1254901961);
+}
+.news-feed__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+}
+.news-feed__header__post-meta {
+  flex: 1;
+}
+.news-feed__header__post-meta__name {
+  font-weight: 600;
+}
+.news-feed__header__post-meta__info {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 0.3125rem;
+}
+.news-feed__header__post-meta__info i {
+  font-size: 1.2rem;
+  color: #1b75e5;
+}
+.news-feed__header img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.news-feed__header__options {
+  font-weight: bold;
+  font-size: 2rem;
+  position: relative;
+  top: -0.9375rem;
+  line-height: 0;
+}
+.news-feed__feed__txt {
+  margin: 0.625rem;
+}
+.news-feed__feed__img {
+  border-radius: 0.3125rem;
+  padding: 0 0.625rem;
+}
+.news-feed__footer {
+  padding: 0.625rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+}
+.news-feed__reactions {
+  font-size: 1.2rem;
+}
+.news-feed__reactions i {
+  color: #1b75e5;
+}
+.news-feed__comments {
+  font-size: 1.2rem;
+  color: #656565;
+}
+.news-feed__comment-box {
+  padding: 0.625rem;
+}
+.news-feed__comment-box .input-box__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+}
+.news-feed__comment-box .input-box__text label {
+  width: 100%;
+}
+.news-feed__comment-box .input-box__text input {
+  border: none;
+  height: 1.875rem;
+  border-radius: 0.9375rem;
+  padding: 0.9375rem;
+  background-color: #efefef;
+  width: inherit;
+  font-size: 0.8rem;
+}
+.news-feed__comment-box img {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */
